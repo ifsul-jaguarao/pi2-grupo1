@@ -5,14 +5,14 @@
 <title>Validando Login</title>
 </head>
 <body>
-
+<p> Validando Login</p>
 <?php
 
 // Substitua pelos valores do host, usuário, senha e base de dados respectivamente
 $conexao   = mysqli_connect("172.16.88.55", "pi2-grupo1", "grupo1", "pi2-grupo1");
 
 // Substitua pela tabela correta
-$resultado = mysqli_query($conexao, "SELECT * FROM Usuario");
+$resultado = mysqli_query($conexao, "SELECT * FROM Questoes");
 
 while ($linha = mysqli_fetch_assoc($resultado)) {
 
